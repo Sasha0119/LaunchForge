@@ -1,0 +1,69 @@
+.navbar {
+  height: var(--header-height);
+  background: transparent;
+  border-bottom: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.nav-search {
+  display: none; /* Hide search as per design reference */
+}
+
+.nav-branding {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-branding h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-branding p {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--success);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--success);
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to top right, var(--acc-primary), var(--acc-secondary));
+  border-radius: 50%;
+  border: 2px solid var(--bg-secondary);
+}
